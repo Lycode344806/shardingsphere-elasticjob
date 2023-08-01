@@ -70,6 +70,7 @@ public final class JavaMain {
         TracingConfiguration<DataSource> tracingConfig = new TracingConfiguration<>("RDB", setUpEventTraceDataSource());
         setUpHttpJob(regCenter, tracingConfig);
         setUpSimpleJob(regCenter, tracingConfig);
+        // 证书
         setUpDataflowJob(regCenter, tracingConfig);
         setUpScriptJob(regCenter, tracingConfig);
         setUpOneOffJob(regCenter, tracingConfig);
